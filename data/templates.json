@@ -1,0 +1,1693 @@
+{
+ "schemaVersion": "2.0.0",
+ "canvas": {
+  "width": 1200,
+  "height": 675,
+  "export": [
+   "png",
+   "jpeg"
+  ],
+  "colorSpace": "sRGB"
+ },
+ "fonts": {
+  "display": {
+   "canvaName": "Rounded M+",
+   "webFamily": "M PLUS Rounded 1c",
+   "fallback": [
+    "Rounded M+ 1p",
+    "Noto Sans JP",
+    "sans-serif"
+   ],
+   "status": "confirmed-name",
+   "weight": 800,
+   "note": "Canvaの既存キャッチ画像は「Rounded M+」（太字）。Webでは同系の M PLUS Rounded 1c を使用。太さは700/800で見比べて決める。"
+  }
+ },
+ "defaults": {
+  "genre": "塾講師 正社員解説",
+  "year": "2026年最新版",
+  "photoPolicy": "原則顔なし。監修者は例外。",
+  "genreOutlinePx": 3,
+  "genreLocked": true
+ },
+ "themes": {
+  "blue": {
+   "primary": "#123F69",
+   "secondary": "#327CC5",
+   "accent": "#FFDE38",
+   "hot": "#F47D19",
+   "danger": "#C9322E",
+   "paper": "#FFFFFF",
+   "ink": "#142E48",
+   "tagFill": "#FFFFFF",
+   "tagStroke": "#315B80",
+   "panel": "#103F6D",
+   "photo": "#D8E7EF",
+   "muted": "#718CA2"
+  },
+  "soft": {
+   "primary": "#164D78",
+   "secondary": "#3D83C5",
+   "accent": "#FFE88A",
+   "hot": "#E17C2B",
+   "danger": "#BF3F3B",
+   "paper": "#FFFCF6",
+   "ink": "#173D5A",
+   "tagFill": "#FFFFFF",
+   "tagStroke": "#596D79",
+   "panel": "#EAF4F6",
+   "photo": "#E3EAE2",
+   "muted": "#81978E"
+  },
+  "map": {
+   "primary": "#225B8C",
+   "secondary": "#397AC2",
+   "accent": "#F9D765",
+   "hot": "#B9751E",
+   "danger": "#BA292B",
+   "paper": "#FFFFFF",
+   "ink": "#202B35",
+   "tagFill": "#FFFFFF",
+   "tagStroke": "#596452",
+   "panel": "#F6F6E9",
+   "photo": "#E5E7D9",
+   "muted": "#87978B"
+  },
+  "green": {
+   "primary": "#123F69",
+   "secondary": "#3981C9",
+   "accent": "#FFE331",
+   "hot": "#FF7900",
+   "danger": "#BC3131",
+   "paper": "#FFFFFF",
+   "ink": "#19354A",
+   "tagFill": "#FFFFFF",
+   "tagStroke": "#658047",
+   "panel": "#F0F6ED",
+   "photo": "#DEE9DF",
+   "muted": "#879D91"
+  },
+  "chalk": {
+   "primary": "#FFFFFF",
+   "secondary": "#346FC0",
+   "accent": "#E9F45C",
+   "hot": "#FF8857",
+   "danger": "#E9433B",
+   "paper": "#FFFFFF",
+   "ink": "#FFFFFF",
+   "tagFill": "#303234",
+   "tagStroke": "#FFFFFF",
+   "panel": "#25282C",
+   "photo": "#303437",
+   "muted": "#A3B0B8"
+  },
+  "ranking": {
+   "primary": "#FFFFFF",
+   "secondary": "#3879CC",
+   "accent": "#FFD338",
+   "hot": "#FF9E49",
+   "danger": "#FF9B97",
+   "paper": "#FFFFFF",
+   "ink": "#FFFFFF",
+   "tagFill": "#8B1921",
+   "tagStroke": "#FFFFFF",
+   "panel": "#67141D",
+   "photo": "#721923",
+   "muted": "#E3B3A8"
+  }
+ },
+ "themeLabels": {
+  "blue": "ブルー",
+  "soft": "ソフト",
+  "map": "マップ",
+  "green": "グリーン",
+  "chalk": "チョーク",
+  "ranking": "ランキング"
+ },
+ "templates": [
+  {
+   "id": "01_photo_left",
+   "name": "写真左 × 右カラーパネル",
+   "theme": "blue",
+   "description": "仕事・基礎知識・仕事内容。写真の右側に半透明カラーを重ねる。",
+   "referenceImages": [
+    1
+   ],
+   "alternativeThemes": [
+    "chalk",
+    "ranking"
+   ],
+   "canvas": {
+    "width": 1200,
+    "height": 675
+   },
+   "layers": [
+    {
+     "id": "photo_main",
+     "type": "photo",
+     "x": 0,
+     "y": 0,
+     "w": 1200,
+     "h": 675,
+     "fit": "cover",
+     "hint": "教材・添削・授業準備などの手元",
+     "optional": false,
+     "portrait": false,
+     "editable": true
+    },
+    {
+     "id": "overlay",
+     "type": "polygon",
+     "points": [
+      [
+       595,
+       0
+      ],
+      [
+       1200,
+       0
+      ],
+      [
+       1200,
+       675
+      ],
+      [
+       430,
+       675
+      ]
+     ],
+     "fill": "$panel",
+     "opacity": 0.91
+    },
+    {
+     "id": "slash",
+     "type": "polygon",
+     "points": [
+      [
+       595,
+       0
+      ],
+      [
+       607,
+       0
+      ],
+      [
+       442,
+       675
+      ],
+      [
+       430,
+       675
+      ]
+     ],
+     "fill": "$paper",
+     "opacity": 0.85
+    },
+    {
+     "id": "title_1",
+     "type": "text",
+     "role": "title",
+     "x": 620,
+     "y": 154,
+     "w": 550,
+     "h": 86,
+     "text": "塾講師の",
+     "fontToken": "display",
+     "fontSize": 70,
+     "minFontSize": 50,
+     "weight": 800,
+     "fill": "$paper",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "keyword_bg",
+     "type": "shape",
+     "shape": "roundRect",
+     "x": 614,
+     "y": 251,
+     "w": 340,
+     "h": 98,
+     "fill": "$secondary",
+     "opacity": 1,
+     "radius": 3,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "title_2",
+     "type": "text",
+     "role": "title",
+     "x": 620,
+     "y": 250,
+     "w": 330,
+     "h": 98,
+     "text": "正社員",
+     "fontToken": "display",
+     "fontSize": 81,
+     "minFontSize": 58,
+     "weight": 800,
+     "fill": "$paper",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "title_3",
+     "type": "text",
+     "role": "title",
+     "x": 961,
+     "y": 279,
+     "w": 218,
+     "h": 64,
+     "text": "とは？",
+     "fontToken": "display",
+     "fontSize": 51,
+     "minFontSize": 37,
+     "weight": 800,
+     "fill": "$paper",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "rule",
+     "type": "shape",
+     "shape": "rect",
+     "x": 624,
+     "y": 384,
+     "w": 526,
+     "h": 3,
+     "fill": "$paper",
+     "opacity": 0.8,
+     "radius": 0,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "subtitle",
+     "type": "text",
+     "role": "subtitle",
+     "x": 618,
+     "y": 397,
+     "w": 540,
+     "h": 60,
+     "text": "年収や仕事内容まで徹底解説！",
+     "fontToken": "display",
+     "fontSize": 32,
+     "minFontSize": 23,
+     "weight": 800,
+     "fill": "$paper",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "rule2",
+     "type": "shape",
+     "shape": "rect",
+     "x": 624,
+     "y": 468,
+     "w": 526,
+     "h": 3,
+     "fill": "$paper",
+     "opacity": 0.8,
+     "radius": 0,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "icon_0",
+     "type": "asset",
+     "assetId": "document",
+     "x": 650,
+     "y": 500,
+     "w": 74,
+     "h": 74,
+     "color": "$paper",
+     "opacity": 1,
+     "editable": true
+    },
+    {
+     "id": "icon_1",
+     "type": "asset",
+     "assetId": "coins",
+     "x": 776,
+     "y": 500,
+     "w": 74,
+     "h": 74,
+     "color": "$paper",
+     "opacity": 1,
+     "editable": true
+    },
+    {
+     "id": "icon_2",
+     "type": "asset",
+     "assetId": "briefcase",
+     "x": 902,
+     "y": 500,
+     "w": 74,
+     "h": 74,
+     "color": "$paper",
+     "opacity": 1,
+     "editable": true
+    },
+    {
+     "id": "icon_3",
+     "type": "asset",
+     "assetId": "chart",
+     "x": 1028,
+     "y": 500,
+     "w": 74,
+     "h": 74,
+     "color": "$paper",
+     "opacity": 1,
+     "editable": true
+    },
+    {
+     "id": "genre",
+     "type": "text",
+     "role": "genre",
+     "x": 24,
+     "y": 15,
+     "w": 535,
+     "h": 49,
+     "text": "塾講師 正社員解説",
+     "fontToken": "display",
+     "fontSize": 41,
+     "minFontSize": 30,
+     "weight": 800,
+     "fill": "$tagFill",
+     "align": "left",
+     "stroke": "$tagStroke",
+     "strokeWidth": 3.0,
+     "runs": [],
+     "editable": true,
+     "lockedPosition": true
+    },
+    {
+     "id": "year_band",
+     "type": "polygon",
+     "points": [
+      [
+       0,
+       71
+      ],
+      [
+       345,
+       71
+      ],
+      [
+       310,
+       95.5
+      ],
+      [
+       345,
+       120
+      ],
+      [
+       0,
+       120
+      ]
+     ],
+     "fill": "$secondary",
+     "opacity": 1,
+     "optional": true,
+     "visibilityGroup": "year"
+    },
+    {
+     "id": "year",
+     "type": "text",
+     "role": "year",
+     "x": 15,
+     "y": 73,
+     "w": 305,
+     "h": 44,
+     "text": "2026年最新版",
+     "fontToken": "display",
+     "fontSize": 29,
+     "minFontSize": 21,
+     "weight": 800,
+     "fill": "$paper",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true,
+     "optional": true,
+     "visibilityGroup": "year"
+    }
+   ],
+   "editableFields": [
+    "photo_main",
+    "title_1",
+    "title_2",
+    "title_3",
+    "subtitle",
+    "icon_0",
+    "icon_1",
+    "icon_2",
+    "icon_3",
+    "genre",
+    "year"
+   ],
+   "safeArea": {
+    "left": 24,
+    "top": 15,
+    "right": 24,
+    "bottom": 24
+   },
+   "themeOverrides": {}
+  },
+  {
+   "id": "02_photo_top",
+   "name": "写真上 × 下タイトル",
+   "theme": "soft",
+   "description": "インタビュー、体験談、対談記事。写真上部、タイトルは白い下段。",
+   "referenceImages": [
+    2
+   ],
+   "alternativeThemes": [
+    "blue",
+    "green"
+   ],
+   "canvas": {
+    "width": 1200,
+    "height": 675
+   },
+   "layers": [
+    {
+     "id": "photo_main",
+     "type": "photo",
+     "x": 0,
+     "y": 0,
+     "w": 1200,
+     "h": 360,
+     "fit": "cover",
+     "hint": "対談する人物の首から下・手元",
+     "optional": false,
+     "portrait": false,
+     "editable": true
+    },
+    {
+     "id": "bottom_panel",
+     "type": "shape",
+     "shape": "rect",
+     "x": 0,
+     "y": 307,
+     "w": 1200,
+     "h": 368,
+     "fill": "$paper",
+     "opacity": 0.98,
+     "radius": 0,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "bubble_bg",
+     "type": "shape",
+     "shape": "roundRect",
+     "x": 659,
+     "y": 246,
+     "w": 493,
+     "h": 70,
+     "fill": "$paper",
+     "opacity": 1,
+     "radius": 35,
+     "stroke": "$secondary",
+     "strokeWidth": 2
+    },
+    {
+     "id": "callout",
+     "type": "text",
+     "role": "callout",
+     "x": 674,
+     "y": 255,
+     "w": 460,
+     "h": 51,
+     "text": "リアルな本音を教えて！",
+     "fontToken": "display",
+     "fontSize": 31,
+     "minFontSize": 22,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "title_1",
+     "type": "text",
+     "role": "title",
+     "x": 35,
+     "y": 344,
+     "w": 1130,
+     "h": 88,
+     "text": "予備校職員の年収・働き方は？",
+     "fontToken": "display",
+     "fontSize": 62,
+     "minFontSize": 45,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "subtitle_bg",
+     "type": "polygon",
+     "points": [
+      [
+       75,
+       439
+      ],
+      [
+       1125,
+       439
+      ],
+      [
+       1090,
+       471.0
+      ],
+      [
+       1125,
+       503
+      ],
+      [
+       75,
+       503
+      ]
+     ],
+     "fill": "$secondary",
+     "opacity": 1
+    },
+    {
+     "id": "subtitle",
+     "type": "text",
+     "role": "subtitle",
+     "x": 94,
+     "y": 444,
+     "w": 1000,
+     "h": 55,
+     "text": "元職員が語る実態と休日の過ごし方",
+     "fontToken": "display",
+     "fontSize": 38,
+     "minFontSize": 27,
+     "weight": 800,
+     "fill": "$paper",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [
+      {
+       "text": "元職員が語る",
+       "fill": "$paper"
+      },
+      {
+       "text": "実態",
+       "fill": "$accent"
+      },
+      {
+       "text": "と休日の過ごし方",
+       "fill": "$paper"
+      }
+     ],
+     "editable": true
+    },
+    {
+     "id": "bubble1_bg",
+     "type": "shape",
+     "shape": "roundRect",
+     "x": 55,
+     "y": 541,
+     "w": 528,
+     "h": 83,
+     "fill": "#D6F1EA",
+     "opacity": 1,
+     "radius": 41,
+     "stroke": "$secondary",
+     "strokeWidth": 2
+    },
+    {
+     "id": "bubble2_bg",
+     "type": "shape",
+     "shape": "roundRect",
+     "x": 617,
+     "y": 541,
+     "w": 528,
+     "h": 83,
+     "fill": "#FBE4E0",
+     "opacity": 1,
+     "radius": 41,
+     "stroke": "$secondary",
+     "strokeWidth": 2
+    },
+    {
+     "id": "icon1",
+     "type": "asset",
+     "assetId": "laptop",
+     "x": 78,
+     "y": 554,
+     "w": 52,
+     "h": 52,
+     "color": "$secondary",
+     "opacity": 1,
+     "editable": true
+    },
+    {
+     "id": "icon2",
+     "type": "asset",
+     "assetId": "calendar",
+     "x": 640,
+     "y": 554,
+     "w": 52,
+     "h": 52,
+     "color": "$secondary",
+     "opacity": 1,
+     "editable": true
+    },
+    {
+     "id": "bubble1",
+     "type": "text",
+     "role": "callout",
+     "x": 140,
+     "y": 551,
+     "w": 426,
+     "h": 60,
+     "text": "授業以外の仕事って？",
+     "fontToken": "display",
+     "fontSize": 30,
+     "minFontSize": 22,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "bubble2",
+     "type": "text",
+     "role": "callout",
+     "x": 700,
+     "y": 551,
+     "w": 425,
+     "h": 60,
+     "text": "休みは十分に取れる？",
+     "fontToken": "display",
+     "fontSize": 30,
+     "minFontSize": 22,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "genre",
+     "type": "text",
+     "role": "genre",
+     "x": 24,
+     "y": 15,
+     "w": 535,
+     "h": 49,
+     "text": "塾講師 正社員解説",
+     "fontToken": "display",
+     "fontSize": 41,
+     "minFontSize": 30,
+     "weight": 800,
+     "fill": "$tagFill",
+     "align": "left",
+     "stroke": "$tagStroke",
+     "strokeWidth": 3.0,
+     "runs": [],
+     "editable": true,
+     "lockedPosition": true
+    }
+   ],
+   "editableFields": [
+    "photo_main",
+    "callout",
+    "title_1",
+    "subtitle",
+    "icon1",
+    "icon2",
+    "bubble1",
+    "bubble2",
+    "genre"
+   ],
+   "safeArea": {
+    "left": 24,
+    "top": 15,
+    "right": 24,
+    "bottom": 24
+   },
+   "themeOverrides": {}
+  },
+  {
+   "id": "03_full_photo",
+   "name": "全面写真 × 中央タイトル",
+   "theme": "map",
+   "description": "求人動向、ランキング、転職など。背景テーマや強調色で印象を変える。",
+   "referenceImages": [
+    3,
+    4,
+    5
+   ],
+   "alternativeThemes": [
+    "chalk",
+    "ranking",
+    "blue"
+   ],
+   "canvas": {
+    "width": 1200,
+    "height": 675
+   },
+   "layers": [
+    {
+     "id": "photo_main",
+     "type": "photo",
+     "x": 0,
+     "y": 0,
+     "w": 1200,
+     "h": 675,
+     "fit": "cover",
+     "hint": "地図・黒板・表彰台などテーマ写真",
+     "optional": false,
+     "portrait": false,
+     "editable": true
+    },
+    {
+     "id": "wash",
+     "type": "shape",
+     "shape": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 1200,
+     "h": 675,
+     "fill": "$panel",
+     "opacity": 0.28,
+     "radius": 0,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "decor",
+     "type": "asset",
+     "assetId": "magnifier",
+     "x": 690,
+     "y": 92,
+     "w": 400,
+     "h": 400,
+     "color": "$hot",
+     "opacity": 0.85,
+     "editable": true
+    },
+    {
+     "id": "callout",
+     "type": "text",
+     "role": "callout",
+     "x": 615,
+     "y": 120,
+     "w": 530,
+     "h": 58,
+     "text": "求人が多い地域はどこ？",
+     "fontToken": "display",
+     "fontSize": 36,
+     "minFontSize": 26,
+     "weight": 800,
+     "fill": "$hot",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "title_1",
+     "type": "text",
+     "role": "title",
+     "x": 120,
+     "y": 214,
+     "w": 960,
+     "h": 115,
+     "text": "塾講師は",
+     "fontToken": "display",
+     "fontSize": 81,
+     "minFontSize": 58,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "center",
+     "stroke": "$paper",
+     "strokeWidth": 5,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "title_2",
+     "type": "text",
+     "role": "title",
+     "x": 80,
+     "y": 330,
+     "w": 1040,
+     "h": 132,
+     "text": "人手不足？",
+     "fontToken": "display",
+     "fontSize": 104,
+     "minFontSize": 75,
+     "weight": 800,
+     "fill": "$danger",
+     "align": "center",
+     "stroke": "$paper",
+     "strokeWidth": 7,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "subtitle_bg",
+     "type": "shape",
+     "shape": "rect",
+     "x": 0,
+     "y": 505,
+     "w": 1200,
+     "h": 104,
+     "fill": "$paper",
+     "opacity": 0.85,
+     "radius": 0,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "subtitle",
+     "type": "text",
+     "role": "subtitle",
+     "x": 45,
+     "y": 520,
+     "w": 1110,
+     "h": 72,
+     "text": "エリア別に採用状況を比較",
+     "fontToken": "display",
+     "fontSize": 48,
+     "minFontSize": 35,
+     "weight": 800,
+     "fill": "$ink",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [
+      {
+       "text": "エリア別",
+       "fill": "$danger"
+      },
+      {
+       "text": "に採用状況を比較",
+       "fill": "$ink"
+      }
+     ],
+     "editable": true
+    },
+    {
+     "id": "genre",
+     "type": "text",
+     "role": "genre",
+     "x": 24,
+     "y": 15,
+     "w": 535,
+     "h": 49,
+     "text": "塾講師 正社員解説",
+     "fontToken": "display",
+     "fontSize": 41,
+     "minFontSize": 30,
+     "weight": 800,
+     "fill": "$tagFill",
+     "align": "left",
+     "stroke": "$tagStroke",
+     "strokeWidth": 3.0,
+     "runs": [],
+     "editable": true,
+     "lockedPosition": true
+    },
+    {
+     "id": "year_band",
+     "type": "polygon",
+     "points": [
+      [
+       0,
+       71
+      ],
+      [
+       345,
+       71
+      ],
+      [
+       310,
+       95.5
+      ],
+      [
+       345,
+       120
+      ],
+      [
+       0,
+       120
+      ]
+     ],
+     "fill": "$secondary",
+     "opacity": 1,
+     "optional": true,
+     "visibilityGroup": "year"
+    },
+    {
+     "id": "year",
+     "type": "text",
+     "role": "year",
+     "x": 15,
+     "y": 73,
+     "w": 305,
+     "h": 44,
+     "text": "2026年最新版",
+     "fontToken": "display",
+     "fontSize": 29,
+     "minFontSize": 21,
+     "weight": 800,
+     "fill": "$paper",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true,
+     "optional": true,
+     "visibilityGroup": "year"
+    }
+   ],
+   "editableFields": [
+    "photo_main",
+    "decor",
+    "callout",
+    "title_1",
+    "title_2",
+    "subtitle",
+    "genre",
+    "year"
+   ],
+   "safeArea": {
+    "left": 24,
+    "top": 15,
+    "right": 24,
+    "bottom": 24
+   },
+   "themeOverrides": {
+    "chalk": {
+     "wash": {
+      "opacity": 0.45
+     },
+     "decor": {
+      "assetId": "blackboard",
+      "color": "$muted",
+      "opacity": 0.3,
+      "x": 790,
+      "y": 105,
+      "w": 330,
+      "h": 330
+     },
+     "callout": {
+      "fill": "$accent"
+     },
+     "title_1": {
+      "stroke": "$panel"
+     },
+     "title_2": {
+      "stroke": "$panel"
+     },
+     "subtitle_bg": {
+      "fill": "$panel",
+      "opacity": 0.9
+     },
+     "subtitle": {
+      "fill": "$paper",
+      "runs": [
+       {
+        "text": "エリア別",
+        "fill": "$accent"
+       },
+       {
+        "text": "に採用状況を比較",
+        "fill": "$paper"
+       }
+      ]
+     }
+    },
+    "ranking": {
+     "wash": {
+      "opacity": 0.45
+     },
+     "decor": {
+      "assetId": "podium",
+      "color": "$accent",
+      "opacity": 0.4,
+      "x": 750,
+      "y": 125,
+      "w": 365,
+      "h": 365
+     },
+     "callout": {
+      "fill": "$accent"
+     },
+     "title_1": {
+      "stroke": "$panel"
+     },
+     "title_2": {
+      "fill": "$accent",
+      "stroke": "$panel"
+     },
+     "subtitle_bg": {
+      "fill": "$panel",
+      "opacity": 0.9
+     },
+     "subtitle": {
+      "fill": "$paper",
+      "runs": [
+       {
+        "text": "エリア別",
+        "fill": "$accent"
+       },
+       {
+        "text": "に採用状況を比較",
+        "fill": "$paper"
+       }
+      ]
+     }
+    }
+   },
+   "contentPresets": [
+    {
+     "theme": "chalk",
+     "fields": {
+      "callout": "教員経験の強みを活かしたい！",
+      "title_1": "教員から転職",
+      "title_2": "するなら？",
+      "subtitle": "おすすめ転職先9選を年代別に紹介！"
+     }
+    },
+    {
+     "theme": "ranking",
+     "fields": {
+      "callout": "",
+      "title_1": "塾業界の売上高",
+      "title_2": "ランキング",
+      "subtitle": "と推移"
+     }
+    }
+   ],
+   "contentPresetRules": "Apply theme layer patches, then replace text fields; clear runs on replacement unless new runs supplied. Empty text hides that text layer. Auto-fit based on actual font."
+  },
+  {
+   "id": "04_split",
+   "name": "左右比較写真 × 中央タイトル",
+   "theme": "green",
+   "description": "職種比較、向き不向き、求人の選び方。2枚の写真を左右に並べる。",
+   "referenceImages": [
+    7
+   ],
+   "alternativeThemes": [
+    "blue",
+    "soft"
+   ],
+   "canvas": {
+    "width": 1200,
+    "height": 675
+   },
+   "layers": [
+    {
+     "id": "photo_left",
+     "type": "photo",
+     "x": 0,
+     "y": 0,
+     "w": 600,
+     "h": 675,
+     "fit": "cover",
+     "hint": "授業・教材・講師の手元",
+     "optional": false,
+     "portrait": false,
+     "editable": true
+    },
+    {
+     "id": "photo_right",
+     "type": "photo",
+     "x": 600,
+     "y": 0,
+     "w": 600,
+     "h": 675,
+     "fit": "cover",
+     "hint": "教室運営・PC・チェックリスト",
+     "optional": false,
+     "portrait": false,
+     "editable": true
+    },
+    {
+     "id": "divider",
+     "type": "shape",
+     "shape": "rect",
+     "x": 598,
+     "y": 0,
+     "w": 4,
+     "h": 675,
+     "fill": "$paper",
+     "opacity": 1,
+     "radius": 0,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "title_panel",
+     "type": "shape",
+     "shape": "roundRect",
+     "x": 52,
+     "y": 126,
+     "w": 1096,
+     "h": 260,
+     "fill": "$paper",
+     "opacity": 0.83,
+     "radius": 42,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "title_1",
+     "type": "text",
+     "role": "title",
+     "x": 120,
+     "y": 144,
+     "w": 960,
+     "h": 88,
+     "text": "あなたに合う",
+     "fontToken": "display",
+     "fontSize": 62,
+     "minFontSize": 45,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "marker",
+     "type": "shape",
+     "shape": "roundRect",
+     "x": 235,
+     "y": 325,
+     "w": 730,
+     "h": 32,
+     "fill": "$accent",
+     "opacity": 0.95,
+     "radius": 12,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "title_2",
+     "type": "text",
+     "role": "title",
+     "x": 102,
+     "y": 231,
+     "w": 996,
+     "h": 119,
+     "text": "塾講師の職種は？",
+     "fontToken": "display",
+     "fontSize": 86,
+     "minFontSize": 62,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [
+      {
+       "text": "塾講師の",
+       "fill": "$primary"
+      },
+      {
+       "text": "職種",
+       "fill": "$hot"
+      },
+      {
+       "text": "は？",
+       "fill": "$primary"
+      }
+     ],
+     "editable": true
+    },
+    {
+     "id": "subtitle_bg",
+     "type": "shape",
+     "shape": "roundRect",
+     "x": 48,
+     "y": 404,
+     "w": 1104,
+     "h": 94,
+     "fill": "$primary",
+     "opacity": 1,
+     "radius": 47.0,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "subtitle",
+     "type": "text",
+     "role": "subtitle",
+     "x": 66,
+     "y": 414,
+     "w": 1068,
+     "h": 72,
+     "text": "教室長と講師職の違いと求人の選び方",
+     "fontToken": "display",
+     "fontSize": 42,
+     "minFontSize": 30,
+     "weight": 800,
+     "fill": "$paper",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [
+      {
+       "text": "教室長",
+       "fill": "$accent"
+      },
+      {
+       "text": "と",
+       "fill": "$paper"
+      },
+      {
+       "text": "講師職",
+       "fill": "$accent"
+      },
+      {
+       "text": "の違いと求人の選び方",
+       "fill": "$paper"
+      }
+     ],
+     "editable": true
+    },
+    {
+     "id": "genre",
+     "type": "text",
+     "role": "genre",
+     "x": 24,
+     "y": 15,
+     "w": 535,
+     "h": 49,
+     "text": "塾講師 正社員解説",
+     "fontToken": "display",
+     "fontSize": 41,
+     "minFontSize": 30,
+     "weight": 800,
+     "fill": "$tagFill",
+     "align": "left",
+     "stroke": "$tagStroke",
+     "strokeWidth": 3.0,
+     "runs": [],
+     "editable": true,
+     "lockedPosition": true
+    }
+   ],
+   "editableFields": [
+    "photo_left",
+    "photo_right",
+    "title_1",
+    "title_2",
+    "subtitle",
+    "genre"
+   ],
+   "safeArea": {
+    "left": 24,
+    "top": 15,
+    "right": 24,
+    "bottom": 24
+   },
+   "themeOverrides": {}
+  },
+  {
+   "id": "05_supervisor",
+   "name": "監修者右下 × 左タイトル",
+   "theme": "blue",
+   "description": "専門家監修、年齢、転職ノウハウ。右下に監修者の写真と氏名を配置。",
+   "referenceImages": [
+    6
+   ],
+   "alternativeThemes": [
+    "soft",
+    "green"
+   ],
+   "canvas": {
+    "width": 1200,
+    "height": 675
+   },
+   "layers": [
+    {
+     "id": "photo_main",
+     "type": "photo",
+     "x": 0,
+     "y": 0,
+     "w": 1200,
+     "h": 675,
+     "fit": "cover",
+     "hint": "教室・ホワイトボード・カレンダー",
+     "optional": false,
+     "portrait": false,
+     "editable": true
+    },
+    {
+     "id": "wash",
+     "type": "shape",
+     "shape": "rect",
+     "x": 0,
+     "y": 80,
+     "w": 1200,
+     "h": 410,
+     "fill": "$paper",
+     "opacity": 0.72,
+     "radius": 0,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "highlight_bg",
+     "type": "shape",
+     "shape": "roundRect",
+     "x": 433,
+     "y": 140,
+     "w": 470,
+     "h": 91,
+     "fill": "$accent",
+     "opacity": 1,
+     "radius": 45,
+     "stroke": null,
+     "strokeWidth": 0
+    },
+    {
+     "id": "title_1",
+     "type": "text",
+     "role": "title",
+     "x": 48,
+     "y": 143,
+     "w": 378,
+     "h": 83,
+     "text": "塾講師の",
+     "fontToken": "display",
+     "fontSize": 62,
+     "minFontSize": 45,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "left",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "title_2",
+     "type": "text",
+     "role": "title",
+     "x": 440,
+     "y": 144,
+     "w": 455,
+     "h": 82,
+     "text": "就職／転職",
+     "fontToken": "display",
+     "fontSize": 64,
+     "minFontSize": 46,
+     "weight": 800,
+     "fill": "$hot",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "title_3",
+     "type": "text",
+     "role": "title",
+     "x": 910,
+     "y": 149,
+     "w": 93,
+     "h": 75,
+     "text": "は",
+     "fontToken": "display",
+     "fontSize": 55,
+     "minFontSize": 40,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "title_4",
+     "type": "text",
+     "role": "title",
+     "x": 48,
+     "y": 251,
+     "w": 820,
+     "h": 142,
+     "text": "何歳まで？",
+     "fontToken": "display",
+     "fontSize": 116,
+     "minFontSize": 84,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "left",
+     "stroke": "$paper",
+     "strokeWidth": 4,
+     "runs": [],
+     "editable": true
+    },
+    {
+     "id": "subtitle_bg",
+     "type": "polygon",
+     "points": [
+      [
+       0,
+       410
+      ],
+      [
+       875,
+       410
+      ],
+      [
+       840,
+       455.0
+      ],
+      [
+       875,
+       500
+      ],
+      [
+       0,
+       500
+      ]
+     ],
+     "fill": "$secondary",
+     "opacity": 1
+    },
+    {
+     "id": "subtitle",
+     "type": "text",
+     "role": "subtitle",
+     "x": 25,
+     "y": 423,
+     "w": 810,
+     "h": 64,
+     "text": "年齢制限と年代別の対策を解説",
+     "fontToken": "display",
+     "fontSize": 42,
+     "minFontSize": 30,
+     "weight": 800,
+     "fill": "$paper",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [
+      {
+       "text": "年齢制限",
+       "fill": "$accent"
+      },
+      {
+       "text": "と",
+       "fill": "$paper"
+      },
+      {
+       "text": "年代別の対策",
+       "fill": "$accent"
+      },
+      {
+       "text": "を解説",
+       "fill": "$paper"
+      }
+     ],
+     "editable": true
+    },
+    {
+     "id": "supervisor_photo",
+     "type": "photo",
+     "x": 885,
+     "y": 288,
+     "w": 315,
+     "h": 387,
+     "fit": "contain",
+     "hint": "監修者の切り抜き写真",
+     "optional": true,
+     "portrait": true,
+     "editable": true,
+     "visibilityGroup": "supervisor"
+    },
+    {
+     "id": "supervisor_plate",
+     "type": "shape",
+     "shape": "roundRect",
+     "x": 824,
+     "y": 574,
+     "w": 354,
+     "h": 80,
+     "fill": "$paper",
+     "opacity": 0.93,
+     "radius": 35,
+     "stroke": null,
+     "strokeWidth": 0,
+     "visibilityGroup": "supervisor",
+     "optional": true
+    },
+    {
+     "id": "supervisor_role",
+     "type": "text",
+     "role": "supervisorRole",
+     "x": 840,
+     "y": 579,
+     "w": 322,
+     "h": 31,
+     "text": "キャリアアドバイザー",
+     "fontToken": "display",
+     "fontSize": 21,
+     "minFontSize": 15,
+     "weight": 800,
+     "fill": "$ink",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true,
+     "visibilityGroup": "supervisor",
+     "optional": true
+    },
+    {
+     "id": "supervisor_name",
+     "type": "text",
+     "role": "supervisorName",
+     "x": 840,
+     "y": 611,
+     "w": 322,
+     "h": 37,
+     "text": "監修者氏名　監修",
+     "fontToken": "display",
+     "fontSize": 29,
+     "minFontSize": 21,
+     "weight": 800,
+     "fill": "$primary",
+     "align": "center",
+     "stroke": null,
+     "strokeWidth": 0,
+     "runs": [],
+     "editable": true,
+     "visibilityGroup": "supervisor",
+     "optional": true
+    },
+    {
+     "id": "genre",
+     "type": "text",
+     "role": "genre",
+     "x": 24,
+     "y": 15,
+     "w": 535,
+     "h": 49,
+     "text": "塾講師 正社員解説",
+     "fontToken": "display",
+     "fontSize": 41,
+     "minFontSize": 30,
+     "weight": 800,
+     "fill": "$tagFill",
+     "align": "left",
+     "stroke": "$tagStroke",
+     "strokeWidth": 3.0,
+     "runs": [],
+     "editable": true,
+     "lockedPosition": true
+    }
+   ],
+   "editableFields": [
+    "photo_main",
+    "title_1",
+    "title_2",
+    "title_3",
+    "title_4",
+    "subtitle",
+    "supervisor_photo",
+    "supervisor_role",
+    "supervisor_name",
+    "genre"
+   ],
+   "safeArea": {
+    "left": 24,
+    "top": 15,
+    "right": 24,
+    "bottom": 24
+   },
+   "themeOverrides": {}
+  }
+ ],
+ "legacyStyleBindings": [
+  {
+   "templateId": "01_photo_left",
+   "textLayerId": "title_2",
+   "legacyDecorationIds": [
+    "keyword_bg"
+   ],
+   "suggestedPreset": "char_square"
+  },
+  {
+   "templateId": "04_split",
+   "textLayerId": "title_2",
+   "legacyDecorationIds": [
+    "marker"
+   ],
+   "suggestedPreset": "marker"
+  },
+  {
+   "templateId": "05_supervisor",
+   "textLayerId": "title_2",
+   "legacyDecorationIds": [
+    "highlight_bg"
+   ],
+   "suggestedPreset": "pill"
+  }
+ ]
+}

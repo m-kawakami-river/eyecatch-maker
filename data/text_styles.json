@@ -1,0 +1,371 @@
+{
+ "schemaVersion": "1.0.0",
+ "units": "em relative to actual font size; opacity 0..1; colors hex or $themeToken",
+ "presets": [
+  {
+   "id": "plain",
+   "label": "シンプル",
+   "kind": "none",
+   "description": "文字色のみ",
+   "defaultTextColor": "$primary",
+   "params": {},
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "textColor"
+   ]
+  },
+  {
+   "id": "block",
+   "label": "文字全体の背景",
+   "kind": "background",
+   "description": "選択範囲のまとまりごとに背景",
+   "defaultTextColor": "$paper",
+   "params": {
+    "fill": "$secondary",
+    "paddingXEm": 0.24,
+    "paddingYEm": 0.1,
+    "radiusEm": 0,
+    "opacity": 1
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "fill",
+    "paddingXEm",
+    "paddingYEm",
+    "radiusEm",
+    "opacity",
+    "textColor"
+   ]
+  },
+  {
+   "id": "char_square",
+   "label": "一文字ずつ正方形背景",
+   "kind": "characterBoxes",
+   "description": "書記素クラスタごとの正方形",
+   "defaultTextColor": "$paper",
+   "params": {
+    "fill": "$secondary",
+    "sizeEm": 1.18,
+    "gapEm": 0.1,
+    "radiusEm": 0,
+    "opacity": 1,
+    "skipWhitespace": true
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "fill",
+    "sizeEm",
+    "gapEm",
+    "radiusEm",
+    "opacity",
+    "skipWhitespace",
+    "textColor"
+   ]
+  },
+  {
+   "id": "pill",
+   "label": "角丸・カプセル背景",
+   "kind": "background",
+   "description": "角丸半径を調整可能",
+   "defaultTextColor": "$hot",
+   "params": {
+    "fill": "$accent",
+    "paddingXEm": 0.36,
+    "paddingYEm": 0.15,
+    "radiusEm": 0.7,
+    "opacity": 1
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "fill",
+    "paddingXEm",
+    "paddingYEm",
+    "radiusEm",
+    "opacity",
+    "textColor"
+   ]
+  },
+  {
+   "id": "chalk",
+   "label": "チョーク風下線",
+   "kind": "underline",
+   "description": "不規則な線と掠れ",
+   "defaultTextColor": "$primary",
+   "params": {
+    "fill": "$danger",
+    "texture": "text_styles/chalk.svg",
+    "thicknessEm": 0.16,
+    "offsetEm": 0.09,
+    "extendEm": 0.08,
+    "opacity": 1
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "fill",
+    "texture",
+    "thicknessEm",
+    "offsetEm",
+    "extendEm",
+    "opacity",
+    "textColor"
+   ]
+  },
+  {
+   "id": "marker",
+   "label": "マーカー風下線",
+   "kind": "underline",
+   "description": "文字の下部に重なる半透明マーカー",
+   "defaultTextColor": "$primary",
+   "params": {
+    "fill": "$accent",
+    "texture": "text_styles/marker.svg",
+    "thicknessEm": 0.36,
+    "offsetEm": -0.16,
+    "extendEm": 0.12,
+    "opacity": 0.9
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "fill",
+    "texture",
+    "thicknessEm",
+    "offsetEm",
+    "extendEm",
+    "opacity",
+    "textColor"
+   ]
+  },
+  {
+   "id": "outline",
+   "label": "袋文字",
+   "kind": "outline",
+   "description": "外側の縁取り",
+   "defaultTextColor": "$paper",
+   "params": {
+    "stroke": "$primary",
+    "widthEm": 0.065,
+    "join": "round"
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "stroke",
+    "widthEm",
+    "join",
+    "textColor"
+   ]
+  },
+  {
+   "id": "double_outline",
+   "label": "二重袋文字",
+   "kind": "outline",
+   "description": "内縁と外縁は別色",
+   "defaultTextColor": "$accent",
+   "params": {
+    "stroke": "$paper",
+    "widthEm": 0.045,
+    "outerStroke": "$primary",
+    "outerWidthEm": 0.085,
+    "join": "round"
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "stroke",
+    "widthEm",
+    "outerStroke",
+    "outerWidthEm",
+    "join",
+    "textColor"
+   ]
+  },
+  {
+   "id": "ribbon",
+   "label": "帯・リボン背景",
+   "kind": "ribbon",
+   "description": "両端に切り込み",
+   "defaultTextColor": "$paper",
+   "params": {
+    "fill": "$secondary",
+    "paddingXEm": 0.55,
+    "paddingYEm": 0.13,
+    "notchEm": 0.23,
+    "opacity": 1
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "fill",
+    "paddingXEm",
+    "paddingYEm",
+    "notchEm",
+    "opacity",
+    "textColor"
+   ]
+  },
+  {
+   "id": "shadow",
+   "label": "ドロップシャドウ",
+   "kind": "shadow",
+   "description": "影の距離・ぼかし",
+   "defaultTextColor": "$primary",
+   "params": {
+    "fill": "#000000",
+    "offsetXEm": 0.06,
+    "offsetYEm": 0.08,
+    "blurEm": 0.03,
+    "opacity": 0.28
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "fill",
+    "offsetXEm",
+    "offsetYEm",
+    "blurEm",
+    "opacity",
+    "textColor"
+   ]
+  },
+  {
+   "id": "double_underline",
+   "label": "二重下線",
+   "kind": "underline",
+   "description": "二本の平行線",
+   "defaultTextColor": "$primary",
+   "params": {
+    "fill": "$secondary",
+    "texture": "text_styles/double_underline.svg",
+    "thicknessEm": 0.17,
+    "offsetEm": 0.08,
+    "extendEm": 0.05,
+    "opacity": 1
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "fill",
+    "texture",
+    "thicknessEm",
+    "offsetEm",
+    "extendEm",
+    "opacity",
+    "textColor"
+   ]
+  },
+  {
+   "id": "hand_circle",
+   "label": "手描き風囲み線",
+   "kind": "enclosure",
+   "description": "不規則な楕円囲み",
+   "defaultTextColor": "$primary",
+   "params": {
+    "fill": "$hot",
+    "texture": "text_styles/hand_circle.svg",
+    "paddingXEm": 0.22,
+    "paddingYEm": 0.18,
+    "thicknessEm": 0.05,
+    "opacity": 1
+   },
+   "scopes": [
+    "selection",
+    "layer",
+    "titleGroup"
+   ],
+   "editable": [
+    "fill",
+    "texture",
+    "paddingXEm",
+    "paddingYEm",
+    "thicknessEm",
+    "opacity",
+    "textColor"
+   ]
+  }
+ ],
+ "rangeModel": {
+  "unit": "UTF-16 offsets, start inclusive end exclusive; aligned to grapheme boundaries (Intl.Segmenter ja)",
+  "fields": [
+   "id",
+   "layerId",
+   "start",
+   "end",
+   "expectedText",
+   "styleIds",
+   "overrides"
+  ],
+  "channels": {
+   "background": [
+    "block",
+    "pill",
+    "ribbon",
+    "char_square"
+   ],
+   "underline": [
+    "chalk",
+    "marker",
+    "double_underline"
+   ],
+   "outline": [
+    "outline",
+    "double_outline"
+   ],
+   "enclosure": [
+    "hand_circle"
+   ],
+   "shadow": [
+    "shadow"
+   ]
+  },
+  "paintOrder": [
+   "shadow",
+   "background",
+   "ribbon",
+   "characterBoxes",
+   "underline",
+   "outerStroke",
+   "innerStroke",
+   "glyphFill",
+   "enclosure"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+{"note":"Canvaで生成した背景画像（人物なし・目視確認済み）。mediaId は Canva の素材ID。preview は小さな見本。","photos":[
+ {"id":"school","mediaId":"MAHb55Xi9js","preview":"school.png","tags":["学校"],"title":"校舎の廊下と校庭","faceFree":true},
+ {"id":"classroom","mediaId":"MAHb50ljv78","preview":"classroom.png","tags":["教室","学校"],"title":"教室の机と黒板","faceFree":true},
+ {"id":"juku","mediaId":"MAHb5_urVLc","preview":"juku.png","tags":["塾"],"title":"個別ブースと本棚","faceFree":true},
+ {"id":"exterior","mediaId":"MAHb5wG8sDE","preview":"exterior.png","tags":["外観","塾"],"title":"建物の入口","faceFree":true},
+ {"id":"teaching","mediaId":"MAHb5xln7yI","preview":"teaching.png","tags":["教えている風景","教室","塾"],"title":"板書のある教室と開いた教材","faceFree":true},
+ {"id":"prep","mediaId":"MAHb5w1ZUc0","preview":"prep.png","tags":["準備風景","塾"],"title":"机上の教材・PC・赤ペン","faceFree":true}
+]}

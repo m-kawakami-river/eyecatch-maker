@@ -1,0 +1,299 @@
+[
+ {
+  "id": "document",
+  "category": "アイコン",
+  "label": "書類・教材",
+  "path": "assets/document.svg",
+  "recolorable": true,
+  "keywords": [
+   "書類・教材",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "coins",
+  "category": "アイコン",
+  "label": "年収・お金",
+  "path": "assets/coins.svg",
+  "recolorable": true,
+  "keywords": [
+   "年収・お金",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "briefcase",
+  "category": "アイコン",
+  "label": "仕事・転職",
+  "path": "assets/briefcase.svg",
+  "recolorable": true,
+  "keywords": [
+   "仕事・転職",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "chart",
+  "category": "アイコン",
+  "label": "売上・成長",
+  "path": "assets/chart.svg",
+  "recolorable": true,
+  "keywords": [
+   "売上・成長",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "laptop",
+  "category": "アイコン",
+  "label": "PC・事務",
+  "path": "assets/laptop.svg",
+  "recolorable": true,
+  "keywords": [
+   "PC・事務",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "calendar",
+  "category": "アイコン",
+  "label": "休日・日程",
+  "path": "assets/calendar.svg",
+  "recolorable": true,
+  "keywords": [
+   "休日・日程",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "clock",
+  "category": "アイコン",
+  "label": "勤務時間",
+  "path": "assets/clock.svg",
+  "recolorable": true,
+  "keywords": [
+   "勤務時間",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "checklist",
+  "category": "アイコン",
+  "label": "求人・選び方",
+  "path": "assets/checklist.svg",
+  "recolorable": true,
+  "keywords": [
+   "求人・選び方",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "magnifier",
+  "category": "アイコン",
+  "label": "調査・検索",
+  "path": "assets/magnifier.svg",
+  "recolorable": true,
+  "keywords": [
+   "調査・検索",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "pin",
+  "category": "アイコン",
+  "label": "地域・エリア",
+  "path": "assets/pin.svg",
+  "recolorable": true,
+  "keywords": [
+   "地域・エリア",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "book",
+  "category": "学校系",
+  "label": "教科書・本",
+  "path": "assets/book.svg",
+  "recolorable": true,
+  "keywords": [
+   "教科書・本",
+   "学校系"
+  ]
+ },
+ {
+  "id": "pencil",
+  "category": "学校系",
+  "label": "筆記用具",
+  "path": "assets/pencil.svg",
+  "recolorable": true,
+  "keywords": [
+   "筆記用具",
+   "学校系"
+  ]
+ },
+ {
+  "id": "blackboard",
+  "category": "学校系",
+  "label": "黒板・授業",
+  "path": "assets/blackboard.svg",
+  "recolorable": true,
+  "keywords": [
+   "黒板・授業",
+   "学校系"
+  ]
+ },
+ {
+  "id": "school",
+  "category": "学校系",
+  "label": "校舎・教室",
+  "path": "assets/school.svg",
+  "recolorable": true,
+  "keywords": [
+   "校舎・教室",
+   "学校系"
+  ]
+ },
+ {
+  "id": "globe",
+  "category": "学校系",
+  "label": "地理・教育",
+  "path": "assets/globe.svg",
+  "recolorable": true,
+  "keywords": [
+   "地理・教育",
+   "学校系"
+  ]
+ },
+ {
+  "id": "notebook",
+  "category": "学校系",
+  "label": "ノート",
+  "path": "assets/notebook.svg",
+  "recolorable": true,
+  "keywords": [
+   "ノート",
+   "学校系"
+  ]
+ },
+ {
+  "id": "bulb",
+  "category": "学校系",
+  "label": "ひらめき",
+  "path": "assets/bulb.svg",
+  "recolorable": true,
+  "keywords": [
+   "ひらめき",
+   "学校系"
+  ]
+ },
+ {
+  "id": "bubble",
+  "category": "吹き出し",
+  "label": "会話・質問",
+  "path": "assets/bubble.svg",
+  "recolorable": true,
+  "keywords": [
+   "会話・質問",
+   "吹き出し"
+  ]
+ },
+ {
+  "id": "burst",
+  "category": "装飾",
+  "label": "注目線",
+  "path": "assets/burst.svg",
+  "recolorable": true,
+  "keywords": [
+   "注目線",
+   "装飾"
+  ]
+ },
+ {
+  "id": "sparkle",
+  "category": "装飾",
+  "label": "きらめき",
+  "path": "assets/sparkle.svg",
+  "recolorable": true,
+  "keywords": [
+   "きらめき",
+   "装飾"
+  ]
+ },
+ {
+  "id": "underline",
+  "category": "装飾",
+  "label": "手描き下線",
+  "path": "assets/underline.svg",
+  "recolorable": true,
+  "keywords": [
+   "手描き下線",
+   "装飾"
+  ]
+ },
+ {
+  "id": "podium",
+  "category": "アイコン",
+  "label": "ランキング",
+  "path": "assets/podium.svg",
+  "recolorable": true,
+  "keywords": [
+   "ランキング",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "person",
+  "category": "アイコン",
+  "label": "人物・監修者",
+  "path": "assets/person.svg",
+  "recolorable": true,
+  "keywords": [
+   "人物・監修者",
+   "アイコン"
+  ]
+ },
+ {
+  "id": "arrow",
+  "category": "装飾",
+  "label": "比較・誘導",
+  "path": "assets/arrow.svg",
+  "recolorable": true,
+  "keywords": [
+   "比較・誘導",
+   "装飾"
+  ]
+ },
+ {
+  "id": "ribbon",
+  "category": "帯・図形",
+  "label": "年度リボン",
+  "path": "assets/ribbon.svg",
+  "recolorable": true,
+  "keywords": [
+   "年度リボン",
+   "帯・図形"
+  ]
+ },
+ {
+  "id": "pill",
+  "category": "帯・図形",
+  "label": "角丸帯",
+  "path": "assets/pill.svg",
+  "recolorable": true,
+  "keywords": [
+   "角丸帯",
+   "帯・図形"
+  ]
+ },
+ {
+  "id": "marker",
+  "category": "帯・図形",
+  "label": "蛍光マーカー",
+  "path": "assets/marker.svg",
+  "recolorable": true,
+  "keywords": [
+   "蛍光マーカー",
+   "帯・図形"
+  ]
+ }
+]
